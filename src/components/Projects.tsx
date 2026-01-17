@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Projects.module.css";
-import { FiExternalLink, FiGithub, FiBookOpen, FiChevronRight } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiBookOpen, FiChevronDown } from "react-icons/fi";
 
 const projects = [
     {
@@ -78,7 +78,7 @@ const Projects = () => {
 
                 <div className={styles.grid}>
                     <AnimatePresence mode="popLayout">
-                        {(showAll ? projects : projects.slice(0, 4)).map((project, i) => (
+                        {(showAll ? projects : projects.slice(0, 3)).map((project, i) => (
                             <motion.div
                                 layout
                                 key={project.title}
@@ -142,11 +142,11 @@ const Projects = () => {
                             <h3 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
                                 {showAll ? "Show Less" : "See More"}
                             </h3>
-                            <FiChevronRight
+                            <FiChevronDown
                                 style={{
                                     fontSize: "3rem",
                                     color: "#fff",
-                                    transform: showAll ? "rotate(-90deg)" : "rotate(0deg)",
+                                    transform: showAll ? "rotate(180deg)" : "rotate(0deg)",
                                     transition: "transform 0.3s ease"
                                 }}
                             />
