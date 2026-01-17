@@ -11,7 +11,7 @@ const projects = [
         category: "App / Networking",
         description: "High-performance VPN solution focusing on secure, loss-free data transmission and low-latency protocol optimization.",
         tech: ["Kotlin", "C/C++", "QUIC Protocol", "JNI"],
-        links: {}, // No code or live link as requested
+        links: {},
         type: "Project"
     },
     {
@@ -39,27 +39,58 @@ const projects = [
         type: "Project"
     },
     {
+        title: "Legal Document Summarizer",
+        category: "Natural Language Processing",
+        description: "Fine-tuned LLMs for summarizing legal documents from UK and India with high accuracy.",
+        tech: ["Python", "NLP", "LLMs"],
+        links: {
+            github: "https://github.com/namanviber/Legal-AI-Summarizer",
+            demo: "https://huggingface.co/spaces/namanviber/LegalAISummarizer"
+        },
+        type: "Project"
+    },
+    {
         title: "Flight Delay Prediction",
         category: "Machine Learning",
-        description: "ML model to predict flight delays with high accuracy.",
-        tech: ["Python", "Machine Learning"],
-        links: { github: "https://github.com/namanviber/Flight-Delay-Prediction" },
+        description: "Weather-based flight delay prediction using Random Forest and multiple ML models.",
+        tech: ["Python", "Machine Learning", "Random Forest"],
+        links: {
+            github: "https://github.com/namanviber/Flight-Delay-Prediction",
+            demo: "https://huggingface.co/spaces/namanviber/Flight_Delay_Prediction"
+        },
+        type: "Project"
+    },
+    {
+        title: "Movigo",
+        category: "Mobile Development",
+        description: "Movie recommendation application using collaborative filtering and collaborative techniques.",
+        tech: ["Flutter", "Machine Learning", "Firebase"],
+        links: {
+            github: "https://github.com/namanviber/movigo",
+            demo: "https://bit.ly/43dUUEs"
+        },
+        type: "Project"
+    },
+    {
+        title: "Game Ghoul",
+        category: "Web Development",
+        description: "Dynamic gaming website for reviews, blogs, and merchandise accessories.",
+        tech: ["HTML/CSS", "JavaScript", "E-commerce"],
+        links: {
+            github: "https://github.com/namanviber/Game-Ghoul-Website",
+            demo: "https://namanviber.github.io/"
+        },
         type: "Project"
     },
     {
         title: "Image Forgery Detection",
-        category: "Deep Learning",
-        description: "Developed algorithms for detecting image splicing with a 92% accuracy rate using a dual U-Net model.",
-        tech: ["Python", "Deep Learning"],
-        links: { github: "https://github.com/namanviber/Image-Forgery-Detection" },
-        type: "Project"
-    },
-    {
-        title: "Movie Recommendation Application",
-        category: "Machine Learning",
-        description: "Built a movie recommendation app using Flutter and collaborative filtering techniques (SVD model).",
-        tech: ["Flutter", "Machine Learning", "Flask", "MongoDB"],
-        links: { github: "https://github.com/namanviber/Movie-Recommendation-App" },
+        category: "Computer Vision",
+        description: "System for analyzing and identifying manipulation signs in images using digital image processing.",
+        tech: ["Python", "Deep Learning", "DIP"],
+        links: {
+            github: "https://github.com/namanviber/Image-Forgery-Detection-DIP",
+            demo: "https://detectimagetampering.streamlit.app/"
+        },
         type: "Project"
     }
 ];
