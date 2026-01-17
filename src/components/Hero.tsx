@@ -91,7 +91,7 @@ const Hero = () => {
                         border: '4px solid var(--accent)'
                     }}>
                         <img
-                            src="/avatar.jpg"
+                            src="/avatar.png"
                             alt="Naman Jain"
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />

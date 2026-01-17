@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Projects.module.css";
-import { FiExternalLink, FiGithub, FiBookOpen } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiBookOpen, FiArrowLeft } from "react-icons/fi";
 
 const projects = [
     {
@@ -123,9 +123,9 @@ const Projects = () => {
                             layout
                             key="toggle-card"
                             className={styles.card}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: -20 }}
                             transition={{ duration: 0.3 }}
                             onClick={() => setShowAll(!showAll)}
                             style={{
@@ -134,13 +134,24 @@ const Projects = () => {
                                 alignItems: "center",
                                 justifyContent: "center",
                                 cursor: "pointer",
-                                minHeight: "300px",
-                                border: "2px dashed var(--border-color)",
-                                background: "rgba(255,255,255,0.02)"
+                                minHeight: "300px"
                             }}
-                            whileHover={{ scale: 1.02, backgroundColor: "rgba(255,255,255,0.05)" }}
+                            whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                         >
+                            <div style={{
+                                width: "50px",
+                                height: "50px",
+                                borderRadius: "50%",
+                                background: "var(--accent)",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginBottom: "1rem",
+                                color: "#000"
+                            }}>
+                                <FiArrowLeft style={{ fontSize: "1.5rem", transform: showAll ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease" }} />
+                            </div>
                             <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>
                                 {showAll ? "Show Less" : "See More"}
                             </h3>
