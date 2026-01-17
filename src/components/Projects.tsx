@@ -92,6 +92,68 @@ const projects = [
             demo: "https://detectimagetampering.streamlit.app/"
         },
         type: "Project"
+    },
+    {
+        title: "ConnectNow",
+        category: "Web Development",
+        description: "Modern video conferencing app with real-time communication, screen sharing, and recording features.",
+        tech: ["WebRTC", "Socket.io", "Node.js"],
+        links: {
+            github: "https://github.com/namanviber/ConnectNow",
+            demo: "https://connectnow.onrender.com"
+        },
+        type: "Project"
+    },
+    {
+        title: "Grill & Chill",
+        category: "Desktop Application",
+        description: "Restaurant management system for order processing, menu management, and employee tracking.",
+        tech: ["Java", "Swing", "MySQL"],
+        links: {
+            github: "https://github.com/namanviber/Grill-Chill-Restaurant-Management-App",
+            demo: "https://www.youtube.com/watch?v=pI08d6-rERY"
+        },
+        type: "Project"
+    },
+    {
+        title: "AI Snake Game",
+        category: "Reinforcement Learning",
+        description: "Intelligent Snake game featuring an agent using Deep Q-Learning to play autonomously.",
+        tech: ["Python", "PyTorch", "Deep Q-Learning"],
+        links: {
+            github: "https://github.com/namanviber/AI-Snake-Game"
+        },
+        type: "Project"
+    },
+    {
+        title: "Movigo Recommendation API",
+        category: "Machine Learning",
+        description: "High-performance movie recommendation API using Collaborative Filtering and SVD algorithms.",
+        tech: ["Python", "Flask", "SVD", "ML"],
+        links: {
+            github: "https://github.com/namanviber/Movigo-recommendation"
+        },
+        type: "Project"
+    },
+    {
+        title: "ConnecTeam Server Recommender",
+        category: "Machine Learning",
+        description: "ML-powered recommendation system suggesting community servers based on user interests.",
+        tech: ["Python", "Machine Learning", "Flask"],
+        links: {
+            github: "https://github.com/namanviber/ConnecTeam-Server-Recommendation"
+        },
+        type: "Project"
+    },
+    {
+        title: "CareerBuddy",
+        category: "Mobile Development",
+        description: "Gamified career guidance app with interactive questionnaires and visual roadmap tracking.",
+        tech: ["Flutter", "Dart", "Firebase"],
+        links: {
+            github: "https://github.com/namanviber/careerbuddy"
+        },
+        type: "Project"
     }
 ];
 
