@@ -1,6 +1,6 @@
 # Naman Jain - Portfolio
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnamanviber%2Fnj-portfolio)
+[Live Website: namanviber.vercel.app](https://namanviber.vercel.app)
 
 This is the personal portfolio website of **Naman Jain**, a Member of Technical Staff and Software Developer specializing in App & Protocol-level development (QUIC), System Design, and AI Agent workflows.
 
