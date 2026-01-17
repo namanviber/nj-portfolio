@@ -118,17 +118,37 @@ const Projects = () => {
                                 </div>
                             </motion.div>
                         ))}
-                    </AnimatePresence>
-                </div>
 
-                <div className={styles.showMoreContainer} style={{ textAlign: "center", marginTop: "40px" }}>
-                    <button
-                        onClick={() => setShowAll(!showAll)}
-                        className={styles.primaryBtn}
-                        style={{ padding: "12px 24px", fontSize: "1rem", cursor: "pointer" }}
-                    >
-                        {showAll ? "Show Less" : "See More"}
-                    </button>
+                        <motion.div
+                            layout
+                            key="toggle-card"
+                            className={styles.card}
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.9 }}
+                            transition={{ duration: 0.3 }}
+                            onClick={() => setShowAll(!showAll)}
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                cursor: "pointer",
+                                minHeight: "300px",
+                                border: "2px dashed var(--border-color)",
+                                background: "rgba(255,255,255,0.02)"
+                            }}
+                            whileHover={{ scale: 1.02, backgroundColor: "rgba(255,255,255,0.05)" }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>
+                                {showAll ? "Show Less" : "See More"}
+                            </h3>
+                            <p style={{ color: "var(--text-secondary)" }}>
+                                {showAll ? "Collapse project list" : "View all projects"}
+                            </p>
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </motion.div>
         </section>
