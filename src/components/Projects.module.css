@@ -1,0 +1,104 @@
+.section {
+    padding: 100px 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title span {
+    color: var(--primary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 24px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.researchCard {
+    border-left: 5px solid var(--secondary);
+}
+
+.categoryBadge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--foreground);
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.techTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.techTags span {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    background: rgba(var(--primary), 0.1);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(var(--primary), 0.2);
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--foreground);
+}
+
+.links a:hover {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
