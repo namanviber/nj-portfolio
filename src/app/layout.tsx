@@ -6,8 +6,11 @@ export const metadata: Metadata = {
   title: "nj - Portfolio | Naman Jain",
   description: "Portfolio of Naman Jain, Member of Technical Staff, specializing in App Networking, QUIC, and AI.",
   icons: {
-    icon: '/icon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
