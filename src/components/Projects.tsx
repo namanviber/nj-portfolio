@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Projects.module.css";
-import { FiExternalLink, FiGithub, FiBookOpen, FiArrowLeft } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiBookOpen, FiChevronRight } from "react-icons/fi";
 
 const projects = [
     {
@@ -139,25 +139,17 @@ const Projects = () => {
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                         >
-                            <div style={{
-                                width: "50px",
-                                height: "50px",
-                                borderRadius: "50%",
-                                background: "var(--accent)",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                marginBottom: "1rem",
-                                color: "#000"
-                            }}>
-                                <FiArrowLeft style={{ fontSize: "1.5rem", transform: showAll ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.3s ease" }} />
-                            </div>
-                            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>
+                            <h3 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
                                 {showAll ? "Show Less" : "See More"}
                             </h3>
-                            <p style={{ color: "var(--text-secondary)" }}>
-                                {showAll ? "Collapse project list" : "View all projects"}
-                            </p>
+                            <FiChevronRight
+                                style={{
+                                    fontSize: "3rem",
+                                    color: "#fff",
+                                    transform: showAll ? "rotate(-90deg)" : "rotate(0deg)",
+                                    transition: "transform 0.3s ease"
+                                }}
+                            />
                         </motion.div>
                     </AnimatePresence>
                 </div>
