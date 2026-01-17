@@ -1,10 +1,8 @@
 # Naman Jain - Portfolio
 
-[Live Website: namanviber.vercel.app](https://namanviber.vercel.app)
+### 🚀 [Visit My Portfolio: Live View](https://namanviber.vercel.app)
 
-This is the personal portfolio website of **Naman Jain**, a Member of Technical Staff and Software Developer specializing in App & Protocol-level development (QUIC), System Design, and AI Agent workflows.
-
-The site is built with **Next.js 15+ (App Router)** and designed to be minimal, fast, and aesthetically pleasing with a dark-themed UI and smooth animations.
+This is the personal portfolio website, built with **Next.js 15+ (App Router)** and designed to be minimal, fast, and aesthetically pleasing with a dark-themed UI and smooth animations.
 
 ## ✨ Features
 

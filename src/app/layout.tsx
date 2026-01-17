@@ -3,8 +3,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "nj - Portfolio | Naman Jain",
-  description: "Portfolio of Naman Jain, Member of Technical Staff, specializing in App Networking, QUIC, and AI.",
+  title: "Naman Jain",
+  description: "Naman Jain, Software Developer, specializing in App Networking, QUIC, and AI.",
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
