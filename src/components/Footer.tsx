@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
-                <p>&copy; {new Date().getFullYear()} Naman Jain. Built with Next.js & Framer Motion.</p>
+                <p>&copy; {new Date().getFullYear()} Naman Jain.</p>
                 <div className={styles.links}>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>

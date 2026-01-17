@@ -37,7 +37,7 @@ const Header = () => {
                     animate={{ opacity: 1, x: 0 }}
                     className={styles.logo}
                 >
-                    <a href="#">NJ<span>.</span></a>
+                    <a href="#">nj<span>.</span></a>
                 </motion.div>
 
                 {/* Desktop Nav */}

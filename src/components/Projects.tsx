@@ -57,6 +57,8 @@ const projects = [
 ];
 
 const Projects = () => {
+    const [showAll, setShowAll] = React.useState(false);
+
     return (
         <section className={styles.section} id="projects">
             <motion.div
@@ -67,7 +69,7 @@ const Projects = () => {
                 <h2 className={styles.title}>Featured <span>Works & Research</span></h2>
 
                 <div className={styles.grid}>
-                    {projects.map((project, i) => (
+                    {(showAll ? projects : projects.slice(0, 4)).map((project, i) => (
                         <motion.div
                             key={project.title}
                             className={`${styles.card} ${project.type === 'Research' ? styles.researchCard : ''}`}
@@ -106,6 +108,16 @@ const Projects = () => {
                             </div>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className={styles.showMoreContainer} style={{ textAlign: "center", marginTop: "40px" }}>
+                    <button
+                        onClick={() => setShowAll(!showAll)}
+                        className={styles.primaryBtn} // Reusing primaryBtn class or add specific one
+                        style={{ padding: "12px 24px", fontSize: "1rem", cursor: "pointer" }}
+                    >
+                        {showAll ? "Show Less" : "See More"}
+                    </button>
                 </div>
             </motion.div>
         </section>

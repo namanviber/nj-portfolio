@@ -30,24 +30,24 @@ const Contact = () => {
                             <FiMapPin className={styles.icon} />
                             <div>
                                 <h4>Location</h4>
-                                <p>Remote / Global</p>
+                                <p>Delhi NCR / Bengaluru / Remote</p>
                             </div>
                         </div>
                         <div className={styles.infoItem}>
                             <FiMail className={styles.icon} />
                             <div>
                                 <h4>Email</h4>
-                                <a href="mailto:name@domain.com">name@domain.com</a>
+                                <a href="mailto:namanviber@gmail.com">namanviber@gmail.com</a>
                             </div>
                         </div>
                     </div>
 
                     <div className={styles.socialGrid}>
-                        <a href="#" className={styles.socialLink} style={{ "--color": "#0077b5" } as any}>
+                        <a href="https://linkedin.com/in/namanviber" target="_blank" rel="noopener noreferrer" className={styles.socialLink} style={{ "--color": "#0077b5" } as any}>
                             <FiLinkedin />
                             <span>LinkedIn</span>
                         </a>
-                        <a href="#" className={styles.socialLink} style={{ "--color": "#333" } as any}>
+                        <a href="https://github.com/namanviber" target="_blank" rel="noopener noreferrer" className={styles.socialLink} style={{ "--color": "#333" } as any}>
                             <FiGithub />
                             <span>GitHub</span>
                         </a>

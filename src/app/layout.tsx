@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Naman Jain | Software Developer & Designer",
+  title: "nj - Portfolio | Naman Jain",
   description: "Portfolio of Naman Jain, Member of Technical Staff, specializing in App Networking, QUIC, and AI.",
 };
 
