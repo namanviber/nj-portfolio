@@ -30,7 +30,7 @@ const Contact = () => {
                             <FiMapPin className={styles.icon} />
                             <div>
                                 <h4>Location</h4>
-                                <p>Delhi NCR / Bengaluru / Remote</p>
+                                <p>Bengaluru, Karnataka</p>
                             </div>
                         </div>
                         <div className={styles.infoItem}>

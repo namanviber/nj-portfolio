@@ -1,10 +1,12 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Experience.module.css";
 
 const Experience = () => {
+    const [expandedIndex, setExpandedIndex] = React.useState<number | null>(0);
+
     const experiences = [
         {
             company: "Starten Systems Pvt. Ltd.",
@@ -52,11 +54,13 @@ const Experience = () => {
                     {experiences.map((exp, i) => (
                         <motion.div
                             key={exp.role}
-                            className={styles.card}
+                            className={`${styles.card} ${expandedIndex === i ? styles.expanded : ''}`}
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.2 }}
+                            transition={{ delay: i * 0.1 }}
+                            onClick={() => setExpandedIndex(expandedIndex === i ? null : i)}
+                            style={{ cursor: "pointer" }}
                         >
                             <div className={styles.header}>
                                 <div className={styles.roleInfo}>
@@ -65,12 +69,25 @@ const Experience = () => {
                                 </div>
                                 <span className={styles.period}>{exp.period}</span>
                             </div>
-                            <p className={styles.desc}>{exp.description}</p>
-                            <ul className={styles.highlights}>
-                                {exp.highlights.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))}
-                            </ul>
+
+                            <AnimatePresence>
+                                {expandedIndex === i && (
+                                    <motion.div
+                                        initial={{ height: 0, opacity: 0 }}
+                                        animate={{ height: "auto", opacity: 1 }}
+                                        exit={{ height: 0, opacity: 0 }}
+                                        transition={{ duration: 0.3 }}
+                                        style={{ overflow: "hidden" }}
+                                    >
+                                        <p className={styles.desc}>{exp.description}</p>
+                                        <ul className={styles.highlights}>
+                                            {exp.highlights.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
                         </motion.div>
                     ))}
                 </div>

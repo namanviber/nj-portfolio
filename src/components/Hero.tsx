@@ -78,6 +78,24 @@ const Hero = () => {
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <div className={styles.blob}></div>
+                    <div className={styles.avatarContainer} style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        zIndex: 10,
+                        width: '180px',
+                        height: '180px',
+                        borderRadius: '50%',
+                        overflow: 'hidden',
+                        border: '4px solid var(--accent)'
+                    }}>
+                        <img
+                            src="/avatar.jpg"
+                            alt="Naman Jain"
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        />
+                    </div>
                     <motion.div
                         className={styles.techCircle}
                         animate={{ rotate: 360 }}
