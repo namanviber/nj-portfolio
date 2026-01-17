@@ -14,8 +14,16 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 30px;
+}
+
+.fullWidthCard {
+    grid-column: 1 / -1;
+    min-height: 100px !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 20px;
 }
 
 .card {

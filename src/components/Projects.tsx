@@ -122,7 +122,7 @@ const Projects = () => {
                         <motion.div
                             layout
                             key="toggle-card"
-                            className={styles.card}
+                            className={`${styles.card} ${showAll ? styles.fullWidthCard : ''}`}
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -20 }}
@@ -130,21 +130,22 @@ const Projects = () => {
                             onClick={() => setShowAll(!showAll)}
                             style={{
                                 display: "flex",
-                                flexDirection: "column",
+                                flexDirection: showAll ? "row" : "column",
                                 alignItems: "center",
                                 justifyContent: "center",
                                 cursor: "pointer",
-                                minHeight: "300px"
+                                minHeight: showAll ? "100px" : "300px",
+                                gap: showAll ? "1rem" : "0"
                             }}
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                         >
-                            <h3 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
+                            <h3 style={{ fontSize: showAll ? "1.5rem" : "2rem", marginBottom: showAll ? "0" : "1rem" }}>
                                 {showAll ? "Show Less" : "See More"}
                             </h3>
                             <FiChevronDown
                                 style={{
-                                    fontSize: "3rem",
+                                    fontSize: showAll ? "2rem" : "3rem",
                                     color: "#fff",
                                     transform: showAll ? "rotate(180deg)" : "rotate(0deg)",
                                     transition: "transform 0.3s ease"
