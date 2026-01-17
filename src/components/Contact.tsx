@@ -51,7 +51,7 @@ const Contact = () => {
                             <FiGithub />
                             <span>GitHub</span>
                         </a>
-                        <a href="#" className={styles.resumeBtn}>
+                        <a href="/Naman_Jain_Resume.pdf" download className={styles.resumeBtn}>
                             Download Resume
                         </a>
                     </div>
